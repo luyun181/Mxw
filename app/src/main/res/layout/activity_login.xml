@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tv_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableStart="@mipmap/icon_user"
+            android:hint="@string/enter_phone_num"
+            android:inputType="phone" />
+    </android.support.design.widget.TextInputLayout>
+   <!-- <EditText
+        android:id="@+id/tv_phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@null"
+        android:drawablePadding="10dp"
+        android:drawableStart="@mipmap/icon_user"
+        android:hint="@string/enter_phone_num"
+        android:inputType="phone" />-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="1dp"
+        android:background="#C1C1C1"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tv_enter_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableStart="@mipmap/icon_password"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+   <!-- <EditText
+        android:id="@+id/tv_enter_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@null"
+        android:drawablePadding="10dp"
+        android:drawableStart="@mipmap/icon_password"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword" />-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="20dp"
+        android:background="#C1C1C1"/>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/ck_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/tv_allow"
+            />
+        <TextView
+            android:id="@+id/tv_allow"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同意并接受用户协议"/>
+    </RelativeLayout>
+    <android.support.v7.widget.CardView
+        android:id="@+id/tv_login"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#E93639"
+        app:cardCornerRadius="5dp"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tv_btn_login"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/bottom_bar_un"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="@string/login"/>
+    </android.support.v7.widget.CardView>
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/forget_password"/>
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/tv_register"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_account"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
